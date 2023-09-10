@@ -1,14 +1,15 @@
-import pynput.keyboard
 import time
+import keyboard
 
-def on_press(key):
-  print(key)
+def check_key_combination():
+    while True:
+        # Verifique se as teclas Ctrl, Alt e M foram pressionadas simultaneamente
+        if keyboard.is_pressed('ctrl+alt+m'):
+            print('The Ctrl+Alt+M key combination was pressed.')
+            break
 
-listener = pynput.keyboard.Listener(on_press=on_press)
-listener.start()
-time.sleep(60 * 10)
+        # Durma brevemente para evitar alto uso da CPU
+        time.sleep(0.05)
 
-# Faça outras coisas aqui
-
-listener.stop()
-print('oi')
+if __name__ == "__main__":
+    check_key_combination()
