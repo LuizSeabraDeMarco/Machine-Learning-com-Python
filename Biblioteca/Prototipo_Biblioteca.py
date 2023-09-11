@@ -1,5 +1,6 @@
 import time
 import keyboard
+import pyautogui as pg
 
 def check_key_combination():
     while True:
@@ -7,6 +8,18 @@ def check_key_combination():
         if keyboard.is_pressed('ctrl+alt+m'):
             print('The Ctrl+Alt+M key combination was pressed.')
             break
+        elif keyboard.is_pressed('ctrl+alt+s'): #adicionar codigo
+            posicao_atual = pg.position()
+            pg.click(x=260, y=80)
+            pg.moveTo(posicao_atual)
+        elif keyboard.is_pressed('ctrl+alt+a'):
+            posicao_atual = pg.position()
+            pg.click(x=430, y=85)
+            pg.moveTo(posicao_atual)
+            
+
+
+
 
         # Durma brevemente para evitar alto uso da CPU
         time.sleep(0.05)
