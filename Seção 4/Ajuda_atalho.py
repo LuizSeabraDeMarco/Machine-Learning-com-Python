@@ -7,6 +7,7 @@ def check_key_combination():
         # Verifique se as teclas Ctrl, Alt e M foram pressionadas simultaneamente
         if keyboard.is_pressed('ctrl+alt+m'):
             print('The Ctrl+Alt+M key combination was pressed.')
+            print('FIM')
             break
         elif keyboard.is_pressed('ctrl+alt+s'): #adicionar codigo
             posicao_atual = pg.position()
