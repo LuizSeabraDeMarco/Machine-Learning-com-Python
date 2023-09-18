@@ -9,17 +9,17 @@ def check_key_combination():
             print('The Ctrl+Alt+M key combination was pressed.')
             print('FIM')
             break
-        elif keyboard.is_pressed('ctrl+alt+s'): #adicionar codigo
+        elif keyboard.is_pressed('ctrl+s'): # more code
             posicao_atual = pg.position()
-            pg.click(x=260, y=80)
+            pg.click(x=930, y=270)
             pg.moveTo(posicao_atual)
-        elif keyboard.is_pressed('ctrl+alt+a'):
+        elif keyboard.is_pressed('ctrl+d'): #more text
             posicao_atual = pg.position()
-            pg.click(x=430, y=85)
+            pg.click(x=1076, y=253)
             pg.moveTo(posicao_atual)
-        elif keyboard.is_pressed('ctrl+alt+d'):
+        elif keyboard.is_pressed('ctrl+c'): #run all
             posicao_atual = pg.position()
-            pg.click(x=327, y=84)
+            pg.click(x=1324, y=269)
             pg.moveTo(posicao_atual)
 
 
