@@ -17,7 +17,7 @@ def check_key_combination():
             posicao_atual = pg.position()
             pg.click(x=1076, y=253)
             pg.moveTo(posicao_atual)
-        elif keyboard.is_pressed('ctrl+c'): #run all
+        elif keyboard.is_pressed('ctrl+alt+n'): #run all
             posicao_atual = pg.position()
             pg.click(x=1324, y=269)
             pg.moveTo(posicao_atual)
