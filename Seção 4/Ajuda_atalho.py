@@ -2,6 +2,7 @@ import time
 import keyboard
 import pyautogui as pg
 
+
 def check_key_combination():
     while True:
         # Verifique se as teclas Ctrl, Alt e M foram pressionadas simultaneamente
